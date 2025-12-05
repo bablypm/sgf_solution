@@ -397,7 +397,7 @@ img{
 	background-color: var(--main-color);
 }
 
-.btn-style-one:before{
+/*.btn-style-one:before{
 	-webkit-transition-duration: 800ms;
 	transition-duration: 800ms;
 	position: absolute;
@@ -443,7 +443,7 @@ img{
 .btn-style-one:hover:after{
 	left:0%;
 	right:auto;
-}
+}*/
 
 .btn-style-one .btn-wrap{
 	position:relative;
@@ -504,7 +504,7 @@ img{
 .sec-title{
 	position:relative;
     z-index: 2;
-	margin-bottom:40px;
+	/*margin-bottom:40px;*/
 }
 
 .sec-title_title{
