@@ -1362,6 +1362,19 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    height: 100%;
+}
+
+.project-block_two-inner a {
+    display: block;
+    height: 100%;
+}
+
+.project-block_two-inner img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
 
 .project-block_two-image {
@@ -2248,6 +2261,14 @@
     position: relative;
     overflow: hidden;
     margin: 50px;
+}
+
+/* turmeric detail grid images */
+.article .turmeric-stage-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
 
 .about-one_bg-layer {
