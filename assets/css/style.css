@@ -1358,10 +1358,39 @@
     margin-bottom: 30px;
 }
 
+/* Ensure product grid columns have equal height and width */
+.market-one_image-column .row .col {
+    display: flex;
+    height: 100%;
+}
+
+.market-one_image-column .row .col > div {
+    width: 100%;
+    height: 100%;
+}
+
 .project-block_two-inner {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+    min-height: 250px;
+}
+
+.project-block_two-inner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.project-block_two-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .project-block_two-image {
