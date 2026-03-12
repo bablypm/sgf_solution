@@ -991,10 +991,12 @@
 
 
 .bannerbg {
-    background-image: url("../../assets/images/banner01.jpg");
+    background-image: url("../../assets/images/banner2.png");
     background-repeat: no-repeat;
     background-color: #fff;
     background-size: cover;
+    aspect-ratio: 1600 / 265;
+    width: 100%;
 }
 
 
@@ -1066,6 +1068,8 @@
     text-transform: capitalize;
     font-family: "Outfit", serif;
     text-align: center;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 .slider-two .swiper-slide-active .slider-two_title {
@@ -1105,14 +1109,14 @@
 }
 
 .slider-two_text {
-    margin-top: 20px;
+   /* margin-top: 20px;*/
     font-weight: 400;
     font-size: 16px;
-    max-width: 860px;
+  /*  max-width: 860px;*/
     margin: 0 auto;
     line-height: 32px;
-    margin-bottom: 35px;
-    color: var(--white-color);
+  /*  margin-bottom: 35px;*/
+    /* color: var(--white-color);*/
     text-align: center;
 }
 
@@ -3204,7 +3208,7 @@
 .slider-two_text {
     font-size: 18px;
     margin-top: 20px;
-    color: #fff;
+    /*color: #fff;*/
 }
 
 /* Media Query */
@@ -3383,9 +3387,9 @@
         margin-top: 30px;
     }
 
-    .bannerbg {
+.bannerbg {
         height: 650px;
-    }
+    } 
 }
 
 @media only screen and (max-width: 990px) {
@@ -3432,10 +3436,10 @@
     .sidebar-page-container.left-sidebar .content-side {
         order: 1;
     }
-
+ 
     .bannerbg {
         height: 630px;
-    }
+    } 
 }
 
 @media only screen and (max-width: 1023px) {
@@ -3611,6 +3615,29 @@
     box-shadow: 0px 0px 15px rgba(0,0,0,0.10);
     border-top: 6px solid var(--color-two);
     background-color: var(--white-color);
+}
+
+/* Turmeric product page: keep the stage cards in a uniform size */
+.turmeric-stage-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.turmeric-stage-card p{
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.turmeric-stage-card img{
+    width: 100%;
+    height: 180px;            /* fallback */
+    aspect-ratio: 4 / 3;      /* keeps all cards visually equal */
+    object-fit: cover;
+}
+
+.turmeric-stage-card h6{
+    margin-top: 12px;
+    margin-bottom: 0;
 }
 .sec-title_subtitle {
     padding: 15px 5px 5px 0px;
