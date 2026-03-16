@@ -263,17 +263,17 @@
 	
 	
 	
-	gsap.to(".expand-section", {
-		width: "100%",  // Expands to full width
-		borderRadius:0,
-		ease: "power2.out",
-		scrollTrigger: {
-			trigger: ".expand-section",
-			start: "top 70%",
-			end: "top 5%",
-			scrub: true
-		}
-	});
+	//gsap.to(".expand-section", {
+	//	width: "100%",  // Expands to full width
+	//	borderRadius:0,
+	//	ease: "power2.out",
+	//	scrollTrigger: {
+	//		trigger: ".expand-section",
+	//		start: "top 70%",
+	//		end: "top 5%",
+	//		scrub: true
+	//	}
+	//});
 	
 	
 	
