@@ -7,35 +7,34 @@
 /* Theme Color */
 
 :root {
-	
 	/* #10753c in decimal RGB */
-	--main-color:rgb(87 144 39);
-	--main-color-rgb:16,117,60;
-	
+	--main-color: rgb(87 144 39);
+	--main-color-rgb: 16,117,60;
 	/* #fcb03f in decimal RGB */
 	--color-two: rgb(228 171 20);
-	--color-two-rgb:252,176,63;
-	
+	--color-two-rgb: 252,176,63;
 	/* #83c042 in decimal RGB */
 	--color-three: rgb(131,192,66);
-	--color-three-rgb:131,192,66;
-	
+	--color-three-rgb: 131,192,66;
 	/* #342929 in decimal RGB */
 	--color-four: rgb(52,41,41);
-	--color-four-rgb:52,41,41;
-	
+	--color-four-rgb: 52,41,41;
 	/* #1f1e17 in decimal RGB */
 	--color-five: rgb(31, 30, 23);
-	--color-five-rgb:31,30,23;
-	
-    /* #ffffff in decimal RGB */
-	--white-color:rgb(255,255,255);
-	--white-color-rgb:255,255,255;
-
+	--color-five-rgb: 31,30,23;
+	/* #ffffff in decimal RGB */
+	--white-color: rgb(255,255,255);
+	--white-color-rgb: 255,255,255;
 	/* #000000 in decimal RGB */
-	--black-color:rgb(0,0,0);
-	--black-color-rgb:0,0,0;
+	--black-color: rgb(0,0,0);
+	--black-color-rgb: 0,0,0;
+	--slider-title: rgb(94,115,30);
+	--slider-title-rgb: 94,115,30;
+	--footer: rgb(253 251 239);
+	--footer-rgb: 253 251 239;
 
+	/*--footer: rgb(255 255 255);
+	--footer-rgb: 255 255 255;*/
 }
 
  
@@ -535,8 +534,9 @@ img{
     line-height: 55px;
 }
 
-.sec-title_text{
-	margin-top:20px;
+.sec-title_text {
+	margin-top: 20px;
+	
 }
 
 .sec-title.light .sec-title_title{

@@ -214,114 +214,11 @@
 
 	//  Animation Fade Left End
 		/////////////////////////////////////////////////////
-	// CURSOR
-	var cursor = $(".cursor"),
-	follower = $(".cursor-follower");
-
-	var posX = 0,
-		posY = 0;
-
-	var mouseX = 0,
-		mouseY = 0;
-
-	TweenMax.to({}, 0.016, {
-	repeat: -1,
-	onRepeat: function() {
-		posX += (mouseX - posX) / 9;
-		posY += (mouseY - posY) / 9;
-
-		TweenMax.set(follower, {
-			css: {
-			left: posX - 12,
-			top: posY - 12
-			}
-		});
-
-		TweenMax.set(cursor, {
-			css: {
-			left: mouseX,
-			top: mouseY
-			}
-		});
-	}
-	});
-
-	$(document).on("mousemove", function(e) {
-		mouseX = e.clientX;
-		mouseY = e.clientY;
-	});
-	//circle
-	$(".theme-btn, a").on("mouseenter", function() {
-		cursor.addClass("active");
-		follower.addClass("active");
-	});
-	$(".theme-btn, a").on("mouseleave", function() {
-		cursor.removeClass("active");
-		follower.removeClass("active");
-	});   
-	// CURSOR End
-	
-	
-	
-	//gsap.to(".expand-section", {
-	//	width: "100%",  // Expands to full width
-	//	borderRadius:0,
-	//	ease: "power2.out",
-	//	scrollTrigger: {
-	//		trigger: ".expand-section",
-	//		start: "top 70%",
-	//		end: "top 5%",
-	//		scrub: true
-	//	}
-	//});
-	
-	
-	
 	/* ==================================================
 		Splite Text
 	================================================== */
 
-	let ofsetHeight = document.querySelector(".project-style-one-items");
-	if (ofsetHeight) {
-		ScrollTrigger.matchMedia({
-			"(min-width: 992px)": function() {
-
-				let pbmitpanels = gsap.utils.toArray(".project-block_four");
-				const spacer = 0;
-
-				let pbmitheight = pbmitpanels[0].offsetHeight + 130;
-				pbmitpanels.forEach((pbmitpanel, i) => {
-					//This is for padding between item
-					TweenMax.set(pbmitpanel, {
-						top: i * 0
-					});
-					const tween = gsap.to(pbmitpanel, {
-						scrollTrigger: {
-							trigger: pbmitpanel,
-							start: () => `top bottom-=100`,
-							end: () => `top top+=40`,
-							scrub: true,
-							invalidateOnRefresh: true
-						},
-						ease: "none",
-						//This is for scaling outsite 
-						scale: () => 1 - (pbmitpanels.length - i) * 0
-					});
-					ScrollTrigger.create({
-						trigger: pbmitpanel,
-						start: () => "top 140px",
-						endTrigger: '.project-style-one-items',
-						end: `bottom top+=${pbmitheight + (pbmitpanels.length * spacer)}`,
-						pin: true,
-						pinSpacing: false,
-					});
-				});
-			},
-			"(max-width:1025px)": function() {
-				ScrollTrigger.getAll().forEach(pbmitpanels => pbmitpanels.kill(true));
-			}
-		});
-	}
+	// previous GSAP-based project scrolling animation removed
 	
 	
 
@@ -878,27 +775,7 @@
 
 	
 	///////////////////////////////////////////////////// 
-    // Title Animation
-    let splitTitleLines = gsap.utils.toArray(".title-anim");
-
-    splitTitleLines.forEach(splitTextLine => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: splitTextLine,
-          start: 'top 90%',
-          end: 'bottom 60%',
-          scrub: false,
-          markers: false,
-          toggleActions: 'play none none none'
-        }
-      });
-
-      const itemSplitted = new SplitText(splitTextLine, { type: "words, lines" });
-      gsap.set(splitTextLine, { perspective: 400 });
-      itemSplitted.split({ type: "lines" })
-      tl.from(itemSplitted.lines, { duration: 1, delay: 0.3, opacity: 0, rotationX: -80, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
-    });
-    /////////////////////////////////////////////////////
+    // Title Animation removed (previously used GSAP / SplitText)
 
 
 	if ($(".animation_mode").length) {
@@ -957,81 +834,7 @@
 	
 	
 	
-	$(document).ready(function() {
-		var st = $(".tx-split-text");
-        if(st.length == 0) return;
-        gsap.registerPlugin(SplitText);
-        st.each(function(index, el) {
-            el.split = new SplitText(el, { 
-                type: "lines,words,chars",
-                linesClass: "split-line"
-            });
-            gsap.set(el, { perspective: 400 });
-
-            if( $(el).hasClass('split-in-fade') ){
-                gsap.set(el.split.chars, {
-                    opacity: 0,
-                    ease: "Back.easeOut",
-                });
-            }
-            if( $(el).hasClass('split-in-right') ){
-                gsap.set(el.split.chars, {
-                    opacity: 0,
-                    x: "50",
-                    ease: "Back.easeOut",
-                });
-            }
-            if( $(el).hasClass('split-in-left') ){
-                gsap.set(el.split.chars, {
-                    opacity: 0,
-                    x: "-50",
-                    ease: "circ.out",
-                });
-            }
-            if( $(el).hasClass('split-in-up') ){
-                gsap.set(el.split.chars, {
-                    opacity: 0,
-                    y: "80",
-                    ease: "circ.out",
-                });
-            }
-            if( $(el).hasClass('split-in-down') ){
-                gsap.set(el.split.chars, {
-                    opacity: 0,
-                    y: "-80",
-                    ease: "circ.out",
-                });
-            }
-            if( $(el).hasClass('split-in-rotate') ){
-                gsap.set(el.split.chars, {
-                    opacity: 0,
-                    rotateX: "50deg",
-                    ease: "circ.out",
-                });
-            }
-            if( $(el).hasClass('split-in-scale') ){
-                gsap.set(el.split.chars, {
-                    opacity: 0,
-                    scale: "0.5",
-                    ease: "circ.out",
-                });
-            }
-            el.anim = gsap.to(el.split.chars, {
-                scrollTrigger: {
-                    trigger: el,
-                    // toggleActions: "restart pause resume reverse",
-                    start: "top 90%",
-                },
-                x: "0",
-                y: "0",
-                rotateX: "0",
-                scale: 1,
-                opacity: 1,
-                duration: 0.8, 
-                stagger: 0.02,
-            });
-        });
-	});
+	// previous GSAP / SplitText-based text animations removed
 	
 	
 	
