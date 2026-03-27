@@ -203,8 +203,19 @@ a:hover,a:focus,a:visited{
 	text-decoration:none;
 	outline:none !important;
 }
+h1 {
+	position: relative;
+	font-weight: 600;
+	font-size: 25px !important;
+	letter-spacing: 1px;
+	align-items: center;
+	color: var(--color-two);
+	text-transform: capitalize;
+	font-family: "Outfit", serif;
+	line-height: 30px !important;
+}
 
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
 	position:relative;
 	margin:0px;
 	background:none;

@@ -2312,7 +2312,7 @@
 
 .about-one_content-column {
     position: relative;
-    margin-bottom: 30px;
+   /* margin-bottom: 30px;*/
 }
 
 .about-one_content {
@@ -2354,7 +2354,7 @@
 
 .about-one_image-column {
     position: relative;
-    margin-bottom: 30px;
+    
 }
 
 .about-one_image-outer {
@@ -3695,3 +3695,10 @@
     font-weight: bold;
     color: var(--color-two);
 }
+.services-three .service-block_three-inner img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+}
+ 

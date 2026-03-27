@@ -1,60 +1,141 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Sun Green Farms</title>
     <!-- Meta Description -->
-    <meta name="description" content="Discover Sun Green Farms in Kerala, where we cultivate organic, chemical-free produce with sustainable farming practices. Taste the purity in every harvest.">
+    <meta name="description"
+          content="Discover Sun Green Farms in Kerala, where we cultivate organic, chemical-free produce with sustainable farming practices. Taste the purity in every harvest." />
 
-    <!-- Meta Keywords (Note: Google no longer uses this tag for ranking) -->
-    <meta name="keywords" content="organic farming, sustainable agriculture, Kerala farms, chemical-free produce, Sun Green Farms">
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title"
+          content="Sun Green Farms | Organic & Sustainable Farming in Kerala" />
+    <meta property="og:description"
+          content="Explore Sun Green Farms' commitment to organic farming and sustainability in Kerala. Enjoy fresh, chemical-free produce grown with care." />
+    <meta property="og:image"
+          content="https://sungreenfarmsorganic.com/assets/images/sgf_profile_full.webp" />
+    <meta property="og:url"
+          content="https://sungreenfarmsorganic.com" />
+    <meta property="og:type" content="website" />
 
-    <!-- Open Graph Tags for Social Media -->
-    <meta property="og:title" content="Sun Green Farms | Organic & Sustainable Farming in Kerala">
-    <meta property="og:description" content="Explore Sun Green Farms' commitment to organic farming and sustainability in Kerala. Enjoy fresh, chemical-free produce grown with care.">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+          content="Sun Green Farms | Organic Farming in Kerala" />
+    <meta name="twitter:description"
+          content="Discover chemical-free farming in Kerala with Sun Green Farms. Naturally grown arrowroot, turmeric, and millets." />
+    <meta name="twitter:image"
+          content="https://sungreenfarmsorganic.com/assets/images/sgf_profile_full.webp" />
 
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://sungreenfarmsorganic.com/" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&amp;display=swap"
+          rel="stylesheet" />
 
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon"
+          href="assets/images/favicon.png"
+          type="image/x-icon" />
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
     <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+
+            {
+              "@type": "Organization",
+              "@id": "https://sungreenfarmsorganic.com/#organization",
+              "name": "Sun Green Farms",
+              "url": "https://sungreenfarmsorganic.com/",
+              "logo": "https://sungreenfarmsorganic.com/assets/images/logo.png",
+              "sameAs": [
+                "https://www.instagram.com/sungreenfarms.organic"
+              ]
+            },
+
+            {
+              "@type": "LocalBusiness",
+              "@id": "https://sungreenfarmsorganic.com/#localbusiness",
+              "name": "Sun Green Farms",
+              "image": "https://sungreenfarmsorganic.com/assets/images/logo.png",
+              "url": "https://sungreenfarmsorganic.com/",
+              "telephone": "+91-9448488665",
+              "email": "sungreenfarmsorganic@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Desamangalam",
+                "addressRegion": "Kerala",
+                "addressCountry": "IN"
+              },
+              "areaServed": "India",
+              "priceRange": "₹₹",
+              "sameAs": [
+                "https://www.instagram.com/sungreenfarms.organic"
+              ]
+            },
+
+            {
+              "@type": "WebSite",
+              "@id": "https://sungreenfarmsorganic.com/#website",
+              "url": "https://sungreenfarmsorganic.com/",
+              "name": "Sun Green Farms",
+              "publisher": {
+                "@id": "https://sungreenfarmsorganic.com/#organization"
+              }
+            }
+
+          ]
+        }
+    </script>
+
 </head>
 
 <body>
     <div class="page-wrapper">
-
         <!-- Main Header -->
         <header class="main-header header-style-two">
-
             <!-- Header Lower -->
             <div class="header-lower">
                 <div class="auto-container">
                     <div class="inner-container">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="logo-box d-flex align-items-center flex-wrap">
-                                <div class="logo"><a href="index2.html"><img src="assets/images/logo.png" alt="Sun Green Farms" title="Sun Green Farms"></a></div>
+                                <div class="logo">
+                                    <a href="index2.html">
+                                        <img loading="lazy"
+                                             src="assets/images/logo.png"
+                                             alt="Sun Green Farms"
+                                             title="Sun Green Farms" />
+                                    </a>
+                                </div>
                             </div>
 
                             <div class="nav-outer d-flex flex-wrap">
                                 <!-- Main Menu -->
-                                <nav class="main-menu navbar-expand-md">
+                                <nav class="main-menu navbar-expand-md" aria-label="Navigation">
                                     <div class="navbar-header">
                                         <!-- Toggle Button -->
-                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <button class="navbar-toggler"
+                                                type="button"
+                                                data-toggle="collapse"
+                                                data-target="#navbarSupportedContent"
+                                                aria-controls="navbarSupportedContent"
+                                                aria-expanded="false"
+                                                aria-label="Toggle navigation">
                                             <span class="icon-bar"></span>
                                             <span class="icon-bar"></span>
                                             <span class="icon-bar"></span>
                                         </button>
                                     </div>
 
-                                    <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                    <div class="navbar-collapse collapse clearfix"
+                                         id="navbarSupportedContent">
                                         <ul class="navigation clearfix">
                                             <li>
                                                 <a href="index2.html" class="active">Home</a>
@@ -69,13 +150,16 @@
                                             <li class="dropdown">
                                                 <a>Products</a>
                                                 <ul class="last-ul">
-
-                                                    <li><a href="arrowroot.html">Arrowroot Starch</a></li>
+                                                    <li>
+                                                        <a href="arrowroot.html">Arrowroot Starch</a>
+                                                    </li>
                                                     <li><a href="turmeric.html">Turmeric Powder</a></li>
                                                     <li><a>Wild Turmeric</a></li>
                                                     <li><a href="ragi.html">Finger Millet</a></li>
                                                 </ul>
-                                                <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                                                <div class="dropdown-btn">
+                                                    <span class="fa fa-angle-down"></span>
+                                                </div>
                                             </li>
 
                                             <li><a href="contact.html">Contact</a></li>
@@ -86,12 +170,11 @@
 
                             <!-- Main Menu End-->
                             <div class="outer-box d-flex align-items-center flex-wrap">
-
                                 <!-- Mobile Navigation Toggler -->
-                                <div class="mobile-nav-toggler"><span class="icon fa-classic fa-solid fa-bars fa-fw"></span></div>
-
+                                <div class="mobile-nav-toggler">
+                                    <span class="icon fa-classic fa-solid fa-bars fa-fw"></span>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -102,205 +185,249 @@
                 <div class="menu-backdrop"></div>
                 <div class="close-btn"><span class="icon fa-xmark"></span></div>
 
-                <nav class="menu-box">
-                    <div class="nav-logo"><a href="index2.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
-                    <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                <nav class="menu-box" aria-label="Logo">
+                    <div class="nav-logo">
+                        <a href="index2.html">
+                            <img loading="lazy"
+                                 src="assets/images/logo.png"
+                                 alt="Sun Green Farms Logo"
+                                 title="" />
+                        </a>
+                    </div>
+                    <div class="menu-outer">
+                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                    </div>
                 </nav>
             </div>
             <!-- End Mobile Menu -->
-
         </header>
-        <!-- End Main Header -->
 
-        <div class="container-fluid bannerbg py-5">
-            <!-- This is for the banner row-->
-        </div>
-        <div class="col-12 article-home">
-            <div class="slider-two_title text-center">Welcome To Sun Green Farms</div>
-            <div class="slider-two_text">
-                At Sun Green Farms, we believe that true nourishment comes from working with nature. <br />
-                Nestled in the heart of Kerala, our farm follows sustainable and eco-friendly practices to grow a variety of natural products—free from harmful chemicals and rich in purity.
-                <br />
-                We are committed to restoring balance between agriculture and ecology by respecting the soil, conserving water, and encouraging biodiversity.                  
-                
+        <main>
+            <!-- End Main Header -->
+
+            <div class="container-fluid bannerbg py-5">
+                <!-- This is for the banner row-->
             </div>
-            <div class="d-flex justify-content-center mt-3">
-                <a href="about.html" class="discover-btn">
-                    Discover More
-                </a>
-            </div>
-        </div>
-
-        <!-- Products starts -->
-        <section class="market-one style-two py-5">
-            <div class="market-one_bg-layer" style="background-image:url(assets/images/background/market-bg.png)"></div>
-            <div class="auto-container py-lg-5" id="products">
-                <div class="row clearfix">
-
-                    <!-- Left Text Column -->
-                    <div class="market-one_content-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="market-one_content-outer">
-                            <!-- Sec Title -->
-                            <div class="sec-title">
-                                <div class="sec-title_title">Our Products</div>
-                                <div class="sec-title_text">
-                                    At Sun Green Natural Farm, we believe that true nourishment comes from working with nature, not against it. Nestled in the heart of Kerala, our farm follows sustainable and eco-friendly practices to grow a variety of natural products—free from harmful chemicals and rich in purity.
-                                </div>
-
-                                <div class="sec-title_text">
-                                    We are committed to restoring balance between agriculture and ecology by respecting the soil, conserving water, and encouraging biodiversity. Every crop we grow carries our promise of health, honesty, and harmony with the Earth.
-                                </div>
-
-                                <div class="sec-title_text">
-                                    Whether it’s traditional roots, wholesome grains, or natural remedies, our products are grown with care for your family and for the planet.
-                                </div>
-
-                                <div class="sec-title_text">
-                                    Sun Green Natural Farm — Naturally Grown. Ecologically Grounded
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <!-- Right Product Cards Column -->
-                    <div class="market-one_image-column col-lg-6 col-md-12 col-sm-12 pt-4 pt-lg-0">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
-
-                            <!-- Product 1 -->
-                            <div class="col">
-                                <div class="project-block_two-inner">
-                                    <a href="arrowroot.html" title="Arrowroot">
-                                        <img src="assets/images/sgf_harvested_arrowroot2.webp" alt="Arrowroot" />
-                                        <div class="project-block_two-title-box">
-                                            <h5 class="project-block_two-title">Arrowroot</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Product 2 -->
-                            <div class="col">
-                                <div class="project-block_two-inner">
-                                    <a href="turmeric.html" title="Turmeric">
-                                        <img src="assets/images/sgf_turmeric.webp" alt="Turmeric" />
-                                        <div class="project-block_two-title-box">
-                                            <h5 class="project-block_two-title">Turmeric</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Product 3 -->
-                            <div class="col">
-                                <div class="project-block_two-inner">
-                                    <a href="ragi.html" title="Finger Millet">
-                                        <img src="assets/images/sgf_ragi_harvested.webp" alt="Finger Millet" />
-                                        <div class="project-block_two-title-box">
-                                            <h5 class="project-block_two-title">Finger Millet</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-
-
-                            <!-- Product 4 -->
-                            <div class="col">
-                                <div class="project-block_two-inner">
-                                    <a href="turmeric-wild.html" title="Wild Turmeric">
-                                        <img src="assets/images/sgf_kasturimanjal.webp" alt="Wild Turmeric" />
-                                        <div class="project-block_two-title-box">
-                                            <h5 class="project-block_two-title">Wild Turmeric</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product 5 -->
-                            <!--<div class="col">
-                            <div class="project-block_two-inner">
-                                <a href="pepper.html" title="Black Pepper">
-                                    <img src="assets/images/sgf_ragi.jpg" alt="Black Pepper" />
-                                    <div class="project-block_two-title-box">
-                                        <h5 class="project-block_two-title">Black Pepper</h5>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>-->
-                            <!--Product 6-->
-                            <!--<div class="col">
-                            <div class="project-block_two-inner">
-                                <a href="kassava.html" title="Cassava">
-                                    <img src="assets/images/sgf_kolli.webp" alt="Cassava" />
-                                    <div class="project-block_two-title-box">
-                                        <h5 class="project-block_two-title">Cassava</h5>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>-->
-                        </div>
-                    </div>
-                    <!-- End Right Column -->
-
-
-
-
+            <div class="col-12 article-home">
+                <div class="slider-two_title text-center">
+                    Welcome To Sun Green Farms
+                </div>
+                <div class="slider-two_text">
+                    At Sun Green Farms, we believe that true nourishment comes from
+                    working with nature. <br />
+                    Nestled in the heart of Kerala, our farm follows sustainable and
+                    eco-friendly practices to grow a variety of natural products—free
+                    from harmful chemicals and rich in purity.
+                    <br />
+                    We are committed to restoring balance between agriculture and
+                    ecology by respecting the soil, conserving water, and encouraging
+                    biodiversity.
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="about.html" class="discover-btn"> Discover More </a>
                 </div>
             </div>
-        </section>
-        <!-- End Products -->
-        <!-- Why Choose Us starts -->
-        <section class="market-one style-two py-5">
-            <div class="market-one_bg-layer" style="background-image:url(assets/images/background/market-bg.png)"></div>
-            <div class="auto-container py-lg-5">
-                <div class="row clearfix">
-                    <!-- Content Column -->
-                    <div class="market-one_image-column col-lg-6 col-md-12 col-sm-12 pt-4 pt-lg-0">
-                        <div class="market-one_image-outer">
-                            <div class="market-one_image">
-                                <img src="assets/images/about03.png" alt="" />
-                            </div>
-                            <div class="market-one_info">
-                                <div class="market-one_info-inner">
-                                    <span class="market-one_info-icon flaticon-sprout"></span>
-                                    Sun<br> Green <br> Farms
+
+            <!-- Products starts -->
+            <section class="market-one style-two py-5"
+                     style="background-image: url(assets/images/background/market-bg.png)">
+                <div class="market-one_bg-layer"></div>
+                <div class="auto-container py-lg-5" id="products">
+                    <div class="row clearfix">
+                        <!-- Left Text Column -->
+                        <div class="market-one_content-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="market-one_content-outer">
+                                <!-- Sec Title -->
+                                <div class="sec-title">
+                                    <h1>Our Products</h1>
+                                    <div class="sec-title_text">
+                                        Ranging from traditional roots and wholesome grains to
+                                        natural remedies—are thoughtfully grown, carefully
+                                        harvested, and meticulously processed, with deep respect
+                                        for both your family’s well-being and the environment,
+                                        while preserving timeless traditional values.
+                                    </div>
+
+                                    <div class="sec-title_text">
+                                        At Sun Green Farms, every product is entirely managed
+                                        in-house—from seed selection and cultivation to
+                                        harvesting, processing, and packaging. We offer only what
+                                        we grow ourselves, ensuring uncompromised quality through
+                                        nutrient-rich soil, chemical-free practices, and complete
+                                        traceability.
+                                    </div>
+
+                                    <div class="sec-title_text">
+                                        All products are processed in a clean, dust-free facility
+                                        built specifically for this purpose. We also use a solar
+                                        dryer to help preserve the natural aroma and color of each
+                                        product without compromise.
+                                    </div>
+
+                                    <div class="sec-title_text">
+                                        Sun Green Farms — Naturally Grown. Ecologically
+                                        Grounded
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Content Column -->
-                    <div class="market-one_content-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="market-one_content-outer">
-                            <!-- Sec Title -->
-                            <div class="sec-title">
-                                <div class="sec-title_title">Why Choose Us</div>
-                                <div class="sec-title_text">By choosing Sun Green Farms, you're not just supporting a farm—you're becoming part of a movement that values purity, ecology, and community. Together, we can reconnect with nature and rediscover the goodness of food grown with love and conscience.</div>
+
+                        <!-- Right Product Cards Column -->
+                        <div class="market-one_image-column col-lg-6 col-md-12 col-sm-12 pt-4 pt-lg-0">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+                                <!-- Product 1 -->
+                                <div class="col">
+                                    <div class="project-block_two-inner">
+                                        <a href="arrowroot.html" title="Arrowroot">
+                                            <img loading="lazy"
+                                                 src="assets/images/sgf_harvested_arrowroot2.webp"
+                                                 alt="Arrowroot" />
+                                            <div class="project-block_two-title-box">
+                                                <h5 class="project-block_two-title">Arrowroot</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Product 2 -->
+                                <div class="col">
+                                    <div class="project-block_two-inner">
+                                        <a href="turmeric.html" title="Turmeric">
+                                            <img loading="lazy"
+                                                 src="assets/images/sgf_turmeric.webp"
+                                                 alt="Turmeric" />
+                                            <div class="project-block_two-title-box">
+                                                <h5 class="project-block_two-title">Turmeric</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Product 3 -->
+                                <div class="col">
+                                    <div class="project-block_two-inner">
+                                        <a href="ragi.html" title="Finger Millet">
+                                            <img loading="lazy"
+                                                 src="assets/images/sgf_ragi_harvested.webp"
+                                                 alt="Finger Millet" />
+                                            <div class="project-block_two-title-box">
+                                                <h5 class="project-block_two-title">Finger Millet</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Product 4 -->
+                                <div class="col">
+                                    <div class="project-block_two-inner">
+                                        <a href="turmeric-wild.html" title="Wild Turmeric">
+                                            <img loading="lazy"
+                                                 src="assets/images/sgf_kasturimanjal.webp"
+                                                 alt="Wild Turmeric" />
+                                            <div class="project-block_two-title-box">
+                                                <h5 class="project-block_two-title">Wild Turmeric</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Product 5 -->
+                                <!--<div class="col">
+                                          <div class="project-block_two-inner">
+                                              <a href="pepper.html" title="Black Pepper">
+                                                  <img src="assets/images/sgf_ragi.jpg" alt="Black Pepper" />
+                                                  <div class="project-block_two-title-box">
+                                                      <h5 class="project-block_two-title">Black Pepper</h5>
+                                                  </div>
+                                              </a>
+                                          </div>
+                                      </div>-->
+                                <!--Product 6-->
+                                <!--<div class="col">
+                                          <div class="project-block_two-inner">
+                                              <a href="kassava.html" title="Cassava">
+                                                  <img src="assets/images/sgf_kolli.webp" alt="Cassava" />
+                                                  <div class="project-block_two-title-box">
+                                                      <h5 class="project-block_two-title">Cassava</h5>
+                                                  </div>
+                                              </a>
+                                          </div>
+                                      </div>-->
                             </div>
-                            <ul class="market-one_list">
-                                <li>
-                                    <i class="icon flaticon-check"></i>
-                                    <strong>Quality Organic Food</strong>
-                                    Every product is cultivated with care, ensuring purity, taste, and the goodness of nature in every bite.
-                                </li>
-                                <li>
-                                    <i class="icon flaticon-check"></i>
-                                    <strong>Chemical Free</strong>
-                                    Our crops are nurtured naturally, without the use of harmful chemicals or synthetic fertilizers.
-                                </li>
-                                <li>
-                                    <i class="icon flaticon-check"></i>
-                                    <strong>Clean & Green</strong>
-                                    Our commitment to sustainable farming means every crop is grown naturally.
-                                </li>
-                            </ul>
+                        </div>
+                        <!-- End Right Column -->
+                    </div>
+                </div>
+            </section>
+            <!-- End Products -->
+            <!-- Why Choose Us starts -->
+            <section class="market-one style-two py-5">
+                <div class="market-one_bg-layer"
+                     style="
+              background-image: url(assets/images/background/market-bg.png);
+            "></div>
+                <div class="auto-container py-lg-5">
+                    <div class="row clearfix">
+                        <!-- Content Column -->
+                        <div class="market-one_image-column col-lg-6 col-md-12 col-sm-12 pt-4 pt-lg-0">
+                            <div class="market-one_image-outer">
+                                <div class="market-one_image">
+                                    <img loading="lazy"
+                                         src="assets/images/about03.png"
+                                         alt="Sun Green Farms natural farming practices" />
+                                </div>
+                                <div class="market-one_info">
+                                    <div class="market-one_info-inner">
+                                        <span class="market-one_info-icon flaticon-sprout"></span>
+                                        Sun<br />
+                                        Green <br />
+                                        Farms
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content Column -->
+                        <div class="market-one_content-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="market-one_content-outer">
+                                <!-- Sec Title -->
+                                <div class="sec-title">
+                                    <div class="sec-title_title">Why Choose Us</div>
+                                    <div class="sec-title_text">
+                                        By choosing Sun Green Farms, you're not just supporting a
+                                        farm—you're becoming part of a movement that values
+                                        purity, ecology, and community. Together, we can reconnect
+                                        with nature and rediscover the goodness of food grown with
+                                        love and conscience.
+                                    </div>
+                                </div>
+                                <ul class="market-one_list">
+                                    <li>
+                                        <i class="icon flaticon-check"></i>
+                                        <strong>Quality Organic Food</strong>
+                                        Every product is cultivated with care, ensuring purity,
+                                        taste, and the goodness of nature in every bite.
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-check"></i>
+                                        <strong>Chemical Free</strong>
+                                        Our crops are nurtured naturally, without the use of
+                                        harmful chemicals or synthetic fertilizers.
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-check"></i>
+                                        <strong>Clean & Green</strong>
+                                        Our commitment to sustainable farming means every crop is
+                                        grown naturally.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- End Why Choose Us -->
-        <!-- Main Footer -->
+            </section>
+            <!-- End Why Choose Us -->
+            <!-- Main Footer -->
+        </main>
+
         <footer class="main-footer">
             <div class="footer_pattern overlay-layer"></div>
             <div class="auto-container">
@@ -308,14 +435,22 @@
                     <!-- Widgets Section -->
                     <div class="widgets-section">
                         <div class="row clearfix">
-
                             <!-- Footer Column -->
                             <div class="footer_column col-lg-4 col-md-6 col-sm-12 pe-4">
                                 <div class="footer-widget footer-two_logo-widget">
-                                    <div class="footer-logo"><a href="index2.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
-                                    <div class="footer-text">We are committed to restoring balance between agriculture and ecology by respecting the soil, conserving water, and encouraging biodiversity. </div>
-
-
+                                    <div class="footer-logo">
+                                        <a href="index2.html">
+                                            <img loading="lazy"
+                                                 src="assets/images/logo.png"
+                                                 alt=""
+                                                 title="" />
+                                        </a>
+                                    </div>
+                                    <div class="footer-text">
+                                        We are committed to restoring balance between agriculture
+                                        and ecology by respecting the soil, conserving water, and
+                                        encouraging biodiversity.
+                                    </div>
                                 </div>
                             </div>
 
@@ -324,12 +459,22 @@
                                 <div class="footer-widget quick-links-widget">
                                     <h5 class="footer-title">Quick Links</h5>
                                     <ul class="footer-quick-links">
-                                        <li class="footerlinks"><a href="index2.html" class="active">Home</a></li>
-                                        <li class="footerlinks"><a href="ecosystem.html">Our Ecosystem</a></li>
-                                        <li class="footerlinks"><a href="about.html">About Us</a></li>
-                                        <li class="footerlinks"><a href="index2.html#products">Products</a></li>
+                                        <li class="footerlinks">
+                                            <a href="index2.html" class="active">Home</a>
+                                        </li>
+                                        <li class="footerlinks">
+                                            <a href="ecosystem.html">Our Ecosystem</a>
+                                        </li>
+                                        <li class="footerlinks">
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li class="footerlinks">
+                                            <a href="index2.html#products">Products</a>
+                                        </li>
 
-                                        <li class="footerlinks"><a href="contact.html">Contact Us</a></li>
+                                        <li class="footerlinks">
+                                            <a href="contact.html">Contact Us</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -339,9 +484,17 @@
                                 <div class="footer-widget contact-widget">
                                     <h5 class="footer-title">Contact Info</h5>
                                     <ul class="footer-contact_list">
-                                        <li><span class="icon fas fa-map-marker-alt fa-fw"></span>Desamangalam, Thrissur, Kerala</li>
-                                        <li><span class="icon fas fa-envelope fa-fw"></span>sungreenfarmsorganic@gmail.com</li>
-                                        <li><span class="icon fas fa-phone fa-fw"></span>+91 9448488665</li>
+                                        <li>
+                                            <span class="icon fas fa-map-marker-alt fa-fw"></span>Desamangalam, Thrissur, Kerala
+                                        </li>
+                                        <li>
+                                            <span class="icon fas fa-envelope fa-fw"></span><a href="mailto:sungreenfarmsorganic@gmail.com">sungreenfarmsorganic@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <span class="icon fas fa-phone fa-fw"></span><a href="tel:+919448488665">
+                                                +91 9448488665
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -354,40 +507,45 @@
                                         <a><i class="fa-brands fa-facebook-f"></i></a>
 
                                         <a><i class="fa-brands fa-youtube"></i></a>
-                                        <a href="https://www.instagram.com/sungreenfarms.organic" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="https://www.instagram.com/sungreenfarms.organic"
+                                           target="_blank"
+                                           rel="noopener noreferrer">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
                 <div class="footer-bottom">
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
-                        <div class="main-footer_copyright">Copyright 2025. All Rights Reserved. </div>
+                        <div class="main-footer_copyright">
+                            Copyright 2025. All Rights Reserved.
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- End Footer Style -->
-
     </div>
     <!-- End PageWrapper -->
     <a href="https://wa.me/send?phone=919448488665"
        class="whatsapp-chat"
        target="_blank"
-       aria-label="Chat on WhatsApp">
-        <img src="assets/images/watsappimg.png" alt="WhatsApp">
+       aria-label="Chat with us">
+        <img loading="lazy" src="assets/images/watsappimg.png" alt="WhatsApp" />
         Chat with us
     </a>
 
     <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <svg class="progress-circle svg-content"
+             width="100%"
+             height="100%"
+             viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
     </div>
-
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -397,6 +555,5 @@
     <script src="assets/js/backtotop.js"></script>
     <script src="assets/js/odometer.js"></script>
     <script src="assets/js/script.js"></script>
-
 </body>
 </html>
