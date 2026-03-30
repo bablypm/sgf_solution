@@ -206,7 +206,7 @@ a:hover,a:focus,a:visited{
 h1 {
 	position: relative;
 	font-weight: 600;
-	font-size: 25px !important;
+	font-size: 30px !important;
 	letter-spacing: 1px;
 	align-items: center;
 	color: var(--color-two);
@@ -214,14 +214,23 @@ h1 {
 	font-family: "Outfit", serif;
 	line-height: 30px !important;
 }
+h2 {
+	padding: 15px 5px 5px 0px;
+	font-size: 25px !important;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: var(--color-two) !important;
+}
+ 
 
-h2,h3,h4,h5,h6 {
-	position:relative;
-	margin:0px;
-	background:none;
-	font-weight:700;
-	color:var(--black-color);
-    font-family: "Outfit", serif;
+h2, h3, h4, h5, h6 {
+	position: relative;
+	margin: 0px;
+	background: none;
+	font-weight: 700;
+	color: var(--black-color);
+	font-family: "Outfit", serif;
+	line-height: 30px !important;
 }
 
 input,button,select,textarea{
@@ -295,6 +304,17 @@ h6{
 
 ul, li {
 	list-style-type: square;
+}
+
+/* Override default square bullets for product lists */
+ul.products {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+ul.products > li {
+	list-style: none;
 }
 
 img{
