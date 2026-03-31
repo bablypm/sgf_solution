@@ -8,14 +8,14 @@
 
 :root {
 	/* #10753c in decimal RGB */
-	--main-color: rgb(87 144 39);
-	--main-color-rgb: 16,117,60;
+	--main-color: rgb(79,132,24);
+	--main-color-rgb: 79,132,24;
 	/* #fcb03f in decimal RGB */
-	--color-two: rgb(228 171 20);
-	--color-two-rgb: 252,176,63;
+	--color-two: rgb(96 56 20);
+	--color-two-rgb: 96 56 20;
 	/* #83c042 in decimal RGB */
-	--color-three: rgb(131,192,66);
-	--color-three-rgb: 131,192,66;
+	--color-three: rgb(79,132,24);
+	--color-three-rgb: 79,132,24;
 	/* #342929 in decimal RGB */
 	--color-four: rgb(52,41,41);
 	--color-four-rgb: 52,41,41;
@@ -32,9 +32,10 @@
 	--slider-title-rgb: 94,115,30;
 	--footer: rgb(253 251 239);
 	--footer-rgb: 253 251 239;
-
 	/*--footer: rgb(255 255 255);
 	--footer-rgb: 255 255 255;*/
+	--headings: rgb(56,107,15);
+	--headings-rgb: 56,107,15
 }
 
  
@@ -209,7 +210,7 @@ h1 {
 	font-size: 30px !important;
 	letter-spacing: 1px;
 	align-items: center;
-	color: var(--color-two);
+	color: var(--headings);
 	text-transform: capitalize;
 	font-family: "Outfit", serif;
 	line-height: 30px !important;
@@ -219,7 +220,7 @@ h2 {
 	font-size: 25px !important;
 	letter-spacing: 1px;
 	font-weight: bold;
-	color: var(--color-two) !important;
+	color: var(--headings) !important;
 }
  
 

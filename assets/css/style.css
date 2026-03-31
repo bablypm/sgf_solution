@@ -26,13 +26,15 @@
 .footer-quick-links li a.active {
     color: var(--main-color) !important;
 }
-
+.main-header .header-lower {
+    border-bottom: 1px solid var(--color-two);
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
 /* Header Style Two */
 .header-style-two {
     position: relative;
-    background: var(--footer) !important;
-
-   
+    /*background: var(--footer) !important;*/
 }
 
 .main-header.header-style-two .outer-box {
@@ -1914,7 +1916,7 @@
     position: relative;
     margin-top: 10px;
     margin-bottom: 20px;
-    color: rgb(228 171 20);
+    color: var(--color-two);
     text-transform: capitalize;
 }
 
@@ -2052,7 +2054,7 @@
 /* ecosystem */
 .services-three {
     position: relative;
-    padding: 80px 0px 55px;
+    padding: 40px 0px 55px;
 }
 
     .services-three.style-two {
@@ -2302,7 +2304,7 @@
 .about-one {
     position: relative;
     overflow: hidden;
-    margin: 50px;
+    margin: 30px;
 }
 
 .about-one_bg-layer {
@@ -2478,7 +2480,7 @@
 
 .contact-one {
     position: relative;
-    padding: 110px 0px 110px;
+    padding: 40px 0px 110px;
     background-color: #fff;
 }
 
@@ -3646,10 +3648,10 @@
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    background-color: rgb(235, 241, 216);
+    background-color: rgb(234 236 231);
     /* "Box" look */
-    border: 1px solid rgba(228, 171, 20, 0.35);
-    border-top: 1px solid rgba(228, 171, 20, 0.35);
+    border: 1px solid rgba(96, 56, 20, 0.35);
+    border-top: 1px solid rgba(96, 56, 20, 0.35);
     /* "Erupted" / popped-out look */
     z-index: 2;
     transform: translateY(-42px);
