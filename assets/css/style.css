@@ -1520,6 +1520,15 @@ a.footerlinks.active {
         padding-top: 0px !important;
     }
 
+/* About page: tighter gap between Why Choose Us and Our Story */
+.market-one.style-two.about-why-before-story {
+    padding-bottom: 45px;
+}
+
+.about-one.about-story-after-why {
+    margin-top: 12px;
+}
+
 .market-one_bg-layer {
     position: absolute;
     left: 0px;
@@ -3462,6 +3471,10 @@ a.footerlinks {
         padding-bottom: 0px;
     }
 
+    .market-one.style-two.about-why-before-story {
+        padding-bottom: 0px;
+    }
+
     .services-four_bg-layer {
         display: none;
     }
@@ -3646,6 +3659,17 @@ a.footerlinks {
 .article {
     width: 85%;
     padding: 20px 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.10);
+    border-top: 6px solid var(--color-two);
+    background-color: var(--white-color);
+}
+
+.article-image {
+   
+    padding: 20px 20px;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
