@@ -1,173 +1,446 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sun Green Farms | Under Construction</title>
+    <meta charset="utf-8" />
+    <title>Sun Green Farms</title>
+    <!-- Meta Description -->
     <meta name="description"
-          content="Sun Green Farms is building something fresh and sustainable. Please check back soon!" />
+          content="Discover Sun Green Farms in Kerala, where we cultivate organic, chemical-free produce with sustainable farming practices. Taste the purity in every harvest." />
 
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="Sun Green Farms - Under Construction" />
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title"
+          content="Sun Green Farms | Organic & Sustainable Farming in Kerala" />
     <meta property="og:description"
-          content="We're working on something fresh and natural. Check back soon!" />
+          content="Explore Sun Green Farms' commitment to organic farming and sustainability in Kerala. Enjoy fresh, chemical-free produce grown with care." />
+    <meta property="og:image"
+          content="https://sungreenfarmsorganic.com/assets/images/sgf_profile_full.webp" />
+    <meta property="og:url"
+          content="https://sungreenfarmsorganic.com" />
     <meta property="og:type" content="website" />
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+          content="Sun Green Farms | Organic Farming in Kerala" />
+    <meta name="twitter:description"
+          content="Discover chemical-free farming in Kerala with Sun Green Farms. Naturally grown arrowroot, turmeric, and millets." />
+    <meta name="twitter:image"
+          content="https://sungreenfarmsorganic.com/assets/images/sgf_profile_full.webp" />
 
-        body {
-            font-family: "Arial", sans-serif;
-            background: #fffbef; /* soft off-white background */
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #333;
-        }
+    <!-- Stylesheets -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.85);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-            max-width: 600px;
-            margin: 0 auto;
-        }
+    <link rel="canonical" href="https://sungreenfarmsorganic.com/" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&amp;display=swap"
+          rel="stylesheet" />
 
-        .logo {
-            width: 100px;
-            margin-bottom: 1rem;
-        }
+    <link rel="shortcut icon"
+          href="assets/images/favicon.png"
+          type="image/x-icon" />
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-weight: bold;
-            color: #388e3c; /* dark green */
-        }
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
 
-        .subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
-            color: #f4a300; /* sun yellow */
-        }
+            {
+              "@type": "Organization",
+              "@id": "https://sungreenfarmsorganic.com/#organization",
+              "name": "Sun Green Farms",
+              "url": "https://sungreenfarmsorganic.com/",
+              "logo": "https://sungreenfarmsorganic.com/assets/images/Logo_UP_KZ00A_R07C.svg",
+              "sameAs": [
+                "https://www.instagram.com/sungreenfarms.organic"
+              ]
+            },
 
-        .description {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            color: #555;
-        }
+            {
+              "@type": "LocalBusiness",
+              "@id": "https://sungreenfarmsorganic.com/#localbusiness",
+              "name": "Sun Green Farms",
+              "image": "https://sungreenfarmsorganic.com/assets/images/Logo_UP_KZ00A_R07C.svg",
+              "url": "https://sungreenfarmsorganic.com/",
+              "telephone": "+91-9448488665",
+              "email": "sungreenfarmsorganic@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Desamangalam",
+                "addressRegion": "Kerala",
+                "addressCountry": "IN"
+              },
+              "areaServed": "India",
+              "priceRange": "₹₹",
+              "sameAs": [
+                "https://www.instagram.com/sungreenfarms.organic"
+              ]
+            },
 
-        .progress-bar {
-            width: 100%;
-            height: 10px;
-            background: rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            overflow: hidden;
-            margin: 2rem 0;
-        }
-
-        .progress-fill {
-            height: 100%;
-            width: 40%;
-            background: linear-gradient(90deg, #8bc34a, #388e3c);
-            animation: pulse 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes pulse {
-            from {
-                opacity: 0.7;
+            {
+              "@type": "WebSite",
+              "@id": "https://sungreenfarmsorganic.com/#website",
+              "url": "https://sungreenfarmsorganic.com/",
+              "name": "Sun Green Farms",
+              "publisher": {
+                "@id": "https://sungreenfarmsorganic.com/#organization"
+              }
             }
 
-            to {
-                opacity: 1;
-            }
+          ]
         }
+    </script>
 
-        .contact-info {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #333;
-        }
-
-            .contact-info a {
-                color: #f4a300;
-                text-decoration: none;
-                font-weight: bold;
-            }
-
-        .footer {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 0.8rem;
-            opacity: 0.7;
-            color: #333;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                margin: 1rem;
-                padding: 1.5rem;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .subtitle {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
 </head>
+
 <body>
-    <header>
-        <!-- Navigation, logo -->
-    </header>
+    <div class="page-wrapper">
+        <!-- Main Header -->
+        <header class="main-header header-style-two">
+            <!-- Header Lower -->
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="logo-box d-flex align-items-center flex-wrap">
+                                <div class="logo">
+                                    <a href="index2.html">
+                                        <img loading="lazy"
+                                             src="assets/images/Logo_UP_KZ00A_R07C.svg" style="width:150px; height:90px;"  
+                                             alt="Sun Green Farms"
+                                             title="Sun Green Farms" />
+                                    </a>
+                                </div>
+                            </div>
 
-    <main>
-        <div class="container">
-            <img loading="lazy"
-                 src="images/Icon_Profile_pic.png"
-                 alt="Sun Green Farms Logo"
-                 class="logo" />
-            <h1>Sun Green Farms</h1>
-            <p class="subtitle">Our Website is Under Construction</p>
-            <p class="description">
-                We’re working on something fresh, natural, and sustainable. Please
-                check back soon to see what we’ve been growing!
-            </p>
+                            <div class="nav-outer d-flex flex-wrap">
+                                <!-- Main Menu -->
+                                <nav class="main-menu navbar-expand-md" aria-label="Navigation">
+                                    <div class="navbar-header">
+                                        <!-- Toggle Button -->
+                                        <button class="navbar-toggler"
+                                                type="button"
+                                                data-toggle="collapse"
+                                                data-target="#navbarSupportedContent"
+                                                aria-controls="navbarSupportedContent"
+                                                aria-expanded="false"
+                                                aria-label="Toggle navigation">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
 
-            <div class="progress-bar">
-                <div class="progress-fill"></div>
+                                    <div class="navbar-collapse collapse clearfix"
+                                         id="navbarSupportedContent">
+                                        <ul class="navigation clearfix">
+                                            <li>
+                                                <a href="index2.html" class="active">Home</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="ecosystem.html">Our Ecosystem</a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a>Products</a>
+                                                <ul class="last-ul products">
+                                                    <li>
+                                                        <a href="arrowroot.html">Arrowroot Starch</a>
+                                                    </li>
+                                                    <li><a href="turmeric.html">Turmeric Powder</a></li>
+                                                     <li><a href="turmeric-wild.html">Wild Turmeric</a></li>
+                                                    <li><a href="ragi.html">Finger Millet</a></li>
+                                                </ul>
+                                                <div class="dropdown-btn">
+                                                    <span class="fa fa-angle-down"></span>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <a href="about.html">About Us</a>
+                                            </li>
+
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <!-- Main Menu End-->
+                            <div class="outer-box d-flex align-items-center flex-wrap">
+                                <!-- Mobile Navigation Toggler -->
+                                <div class="mobile-nav-toggler">
+                                    <span class="icon fa-classic fa-solid fa-bars fa-fw"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header Lower-->
+            <!-- Mobile Menu  -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <div class="close-btn"><span class="icon fa-xmark"></span></div>
+
+                <nav class="menu-box" aria-label="Logo">
+                    <div class="nav-logo">
+                        <a href="index2.html">
+                            <img loading="lazy"
+                                 src="assets/images/Logo_UP_KZ00A_R07C.svg" style="width:150px; height:90px;"
+                                 alt="Sun Green Farms Logo"
+                                 title="" />
+                        </a>
+                    </div>
+                    <div class="menu-outer">
+                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                    </div>
+                </nav>
+            </div>
+            <!-- End Mobile Menu -->
+        </header>
+
+        <main>
+            <!-- End Main Header -->
+
+            <div class="container-fluid bannerbg py-5">
+                <!-- This is for the banner row-->
+            </div>
+            <div class="col-12 article-home"> 
+                <h1 class="text-center"> Welcome To Sun Green Farms</h1>
+                <div class="slider-two_text">
+                    At Sun Green Farms, we believe that true nourishment comes from
+                    working with nature. <br />
+                    Nestled in the heart of Kerala, our farm follows sustainable and
+                    eco-friendly practices to grow a variety of natural products—free
+                    from harmful chemicals and rich in purity.
+                    <br />
+                    We are committed to restoring balance between agriculture and
+                    ecology by respecting the soil, conserving water, and encouraging
+                    biodiversity.
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="about.html" class="discover-btn"> Discover More </a>
+                </div>
             </div>
 
-            <div class="contact-info">
-                <p>
-                    Have questions? Email us at
-                    <a href="mailto:sungreenfarmsorganic@gmail.com">sungreenfarmsorganic@gmail.com</a>
-                </p>
+            <!-- Products starts -->
+            <section class="market-one style-two py-5"
+                     style="background-image: url(assets/images/background/market-bg.png)">
+                <div class="market-one_bg-layer"></div>
+                <div class="auto-container" id="products">
+                    <div class="row clearfix">
+                        <!-- Left Text Column -->
+                        <div class="market-one_content-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="market-one_content-outer">
+                                <!-- Sec Title -->
+                                <div class="sec-title">
+                                    <h2 class="sec-title_subtitle">Our Products</h2>
+                                    <div class="sec-title_text">
+                                        Ranging from traditional roots and wholesome grains to
+                                        natural remedies—are thoughtfully grown, carefully
+                                        harvested, and meticulously processed, with deep respect
+                                        for both your family’s well-being and the environment,
+                                        while preserving timeless traditional values.
+                                    </div>
+
+                                    <div class="sec-title_text">
+                                        At Sun Green Farms, every product is entirely managed
+                                        in-house—from seed selection and cultivation to
+                                        harvesting, processing, and packaging. We offer only what
+                                        we grow ourselves, ensuring uncompromised quality through
+                                        nutrient-rich soil, chemical-free practices, and complete
+                                        traceability.
+                                    </div>
+
+                                    <div class="sec-title_text">
+                                        All products are processed in a clean, dust-free facility
+                                        built specifically for this purpose. We also use a solar
+                                        dryer to help preserve the natural aroma and color of each
+                                        product without compromise.
+                                    </div>
+
+                                    <div class="sec-title_text">
+                                        Sun Green Farms — Naturally Grown. Ecologically
+                                        Grounded
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Product Cards Column -->
+                        <div class="market-one_image-column col-lg-6 col-md-12 col-sm-12 pt-4 pt-lg-0">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+                                <!-- Product 1 -->
+                                <div class="col">
+                                    <div class="project-block_two-inner">
+                                        <a href="arrowroot.html" title="Arrowroot">
+                                            <img loading="lazy"
+                                                 src="assets/images/sgf_harvested_arrowroot2.webp"
+                                                 alt="Arrowroot" />
+                                            <div class="project-block_two-title-box">
+                                                <h5 class="project-block_two-title">Arrowroot</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Product 2 -->
+                                <div class="col">
+                                    <div class="project-block_two-inner">
+                                        <a href="turmeric.html" title="Turmeric">
+                                            <img loading="lazy"
+                                                 src="assets/images/sgf_turmeric.webp"
+                                                 alt="Turmeric" />
+                                            <div class="project-block_two-title-box">
+                                                <h5 class="project-block_two-title">Turmeric</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Product 3 -->
+                                <div class="col">
+                                    <div class="project-block_two-inner">
+                                        <a href="ragi.html" title="Finger Millet">
+                                            <img loading="lazy"
+                                                 src="assets/images/sgf_ragi_harvested.webp"
+                                                 alt="Finger Millet" />
+                                            <div class="project-block_two-title-box">
+                                                <h5 class="project-block_two-title">Finger Millet</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Product 4 -->
+                                <div class="col">
+                                    <div class="project-block_two-inner">
+                                        <a href="turmeric-wild.html" title="Wild Turmeric">
+                                            <img loading="lazy"
+                                                 src="assets/images/sgf_kasturimanjal.webp"
+                                                 alt="Wild Turmeric" />
+                                            <div class="project-block_two-title-box">
+                                                <h5 class="project-block_two-title">Wild Turmeric</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- End Right Column -->
+                    </div>
+                </div>
+            </section>
+            <!-- End Products -->
+            <!-- Why Choose Us starts -->
+            <section class="market-one style-two py-5">
+                <div class="market-one_bg-layer"
+                     style="
+              background-image: url(assets/images/background/market-bg.png);
+            "></div>
+                <div class="auto-container py-lg-5">
+                    <div class="row clearfix">
+                        <!-- Content Column -->
+                        <div class="market-one_image-column col-lg-6 col-md-12 col-sm-12 pt-4 pt-lg-0">
+                            <div class="market-one_image-outer">
+                                <div class="market-one_image">
+                                    <img loading="lazy"
+                                         src="assets/images/about03.png"
+                                         alt="Sun Green Farms Organic Farming practices" />
+                                </div>
+                                <div class="market-one_info">
+                                    <div class="market-one_info-inner">
+                                        <span class="market-one_info-icon flaticon-sprout"></span>
+                                        Sun<br />
+                                        Green <br />
+                                        Farms
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content Column -->
+                        <div class="market-one_content-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="market-one_content-outer">
+                                <!-- Sec Title -->
+                                <div class="sec-title">
+                                    <h2>Why Choose Us</h2>
+                                    <div class="sec-title_text">
+                                        By choosing Sun Green Farms, you're not just supporting a
+                                        farm—you're becoming part of a movement that values
+                                        purity, ecology, and community. Together, we can reconnect
+                                        with nature and rediscover the goodness of food grown with
+                                        love and conscience.
+                                    </div>
+                                </div>
+                                <br />
+                                <ul class="market-one_list">
+                                    <li>
+                                        <i class="icon flaticon-check"></i>
+                                        <strong>Quality Organic Food</strong>
+                                        Every product is cultivated with care, ensuring purity,
+                                        taste, and the goodness of nature in every bite.
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-check"></i>
+                                        <strong>Chemical Free</strong>
+                                        Our crops are nurtured naturally, without the use of
+                                        harmful chemicals or synthetic fertilizers.
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-check"></i>
+                                        <strong>Clean & Green</strong>
+                                        Our commitment to sustainable farming means every crop is
+                                        grown naturally.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Why Choose Us -->
+            <!-- Main Footer -->
+        </main>
+
+        <footer class="main-footer text-center">
+          
+            <div class="auto-container inner-container widgets-section">
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 justify-content-center g-2 footer-links-row">
+                    <div class="col">
+                        <a href="index2.html" class="footerlinks active">Home</a>
+                    </div>
+                    <div class="col">
+                        <a href="ecosystem.html" class="footerlinks">Our Ecosystem</a>
+                    </div>
+                    <div class="col">
+                        <a href="index2.html#products" class="footerlinks">Products</a>
+                    </div>
+                    <div class="col">
+                        <a href="about.html" class="footerlinks">About Us</a>
+                    </div>
+                    <div class="col">
+                        <a href="contact.html" class="footerlinks">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer_socials d-flex justify-content-center flex-wrap gap-2 mt-3 pt-1">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/sungreenfarms.organic"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="footer-text mb-0 mt-3 pb-1">© 2026 Sun Green Farms. All rights reserved.</p>
             </div>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2025 Sun Green Farms. All rights reserved.</p>
-        </div>
-    </main>
-
-    <footer>
-        <!-- Footer content -->
-    </footer>
-
+        </footer>
+        <!-- End Footer Style -->
+    </div>
     <!-- End PageWrapper -->
     <a href="https://wa.me/send?phone=919448488665"
        class="whatsapp-chat"
@@ -176,5 +449,23 @@
         <img loading="lazy" src="assets/images/watsappimg.png" alt="WhatsApp" />
         Chat with us
     </a>
+
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content"
+             width="100%"
+             height="100%"
+             viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
