@@ -23,7 +23,9 @@
     color: var(--main-color) !important;
 }
 
-.footer-quick-links li a.active {
+.footer-quick-links li a.active,
+.footerlinks a.active,
+a.footerlinks.active {
     color: var(--main-color) !important;
 }
 .main-header .header-lower {
@@ -1002,12 +1004,7 @@
     background-size: cover;
     aspect-ratio: 1600 / 265;
     width: 100%;
-}
-
-
-
-
-
+} 
 .slider-two {
     position: relative;
     text-align: center;
@@ -1786,7 +1783,8 @@
 
 
 /* footer */
-.footerlinks a {
+.footerlinks a,
+a.footerlinks {
     font-family: "Outfit", sans-serif;
     font-size: 17px;
     line-height: 25px;
@@ -1852,7 +1850,11 @@
 
 .main-footer {
     position: relative;
-    background-color: rgb(253 251 239);
+    background-color: var(--footer);
+
+    border-top: 1px solid var(--color-two);
+    
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .footer_pattern {
@@ -1888,6 +1890,15 @@
     margin-top: 25px;
 }
 
+.footer_socials-cell {
+    margin-top: 0;
+}
+
+/* Inline icon row: flex gap handles spacing */
+.main-footer .footer_socials.d-flex a {
+    margin-right: 0;
+}
+
     .footer_socials a {
         position: relative;
         width: 42px;
@@ -1909,7 +1920,8 @@
 
 .main-footer .widgets-section {
     position: relative;
-    padding: 60px 0px 20px;
+    padding: 20px 0px 20px;
+    width: 60%;
 }
 
 .footer-title {
@@ -3642,6 +3654,30 @@
     background-color: var(--white-color);
 }
 
+/* Improve article readability on smaller screens */
+@media (max-width: 991px) {
+    .about-one.article {
+        width: 94%;
+        padding: 16px 20px;
+    }
+
+    .about-one.article .about-one-content-wrapper {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-one.article {
+        width: 100%;
+        padding: 14px 10px;
+        border-radius: 8px;
+    }
+
+    .about-one.article .sec-title_text {
+        margin-top: 14px;
+    }
+}
+
 .article-home {
     width: 100%;
     padding: 20px 50px;
@@ -3649,6 +3685,7 @@
     overflow: hidden;
     border-radius: 12px;
     background-color: rgb(234 236 231);
+    /* background-image: url("../../assets/images/banner2.png");*/
     /* "Box" look */
     border: 1px solid rgba(96, 56, 20, 0.35);
     border-top: 1px solid rgba(96, 56, 20, 0.35);

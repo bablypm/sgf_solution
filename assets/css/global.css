@@ -30,8 +30,10 @@
 	--black-color-rgb: 0,0,0;
 	--slider-title: rgb(94,115,30);
 	--slider-title-rgb: 94,115,30;
-	--footer: rgb(253 251 239);
-	--footer-rgb: 253 251 239;
+	--footer: rgb(255,255,255);
+	--footer-rgb: 255 255 255;
+	--header: rgb(253 251 239);
+	--header-rgb: 253 251 239;
 	/*--footer: rgb(255 255 255);
 	--footer-rgb: 255 255 255;*/
 	--headings: rgb(56,107,15);
