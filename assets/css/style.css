@@ -1933,15 +1933,6 @@ a.footerlinks {
     width: 60%;
 }
 
-.footer-links-row {
-    flex-wrap: nowrap;
-}
-
-.footer-links-row > .col {
-    flex: 0 0 auto;
-    width: auto;
-}
-
 .footer-title {
     position: relative;
     margin-top: 10px;
@@ -3715,9 +3706,15 @@ a.footerlinks {
     }
 
     .footer-links-row {
+        flex-wrap: nowrap;
         justify-content: center;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+    }
+
+    .footer-links-row > .col {
+        flex: 0 0 auto;
+        width: auto;
     }
 }
 
