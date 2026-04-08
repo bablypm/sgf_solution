@@ -109,7 +109,7 @@
                                 <div class="logo">
                                     <a href="index.html">
                                         <img loading="lazy"
-                                             src="assets/images/Logo_UP_KZ00A_R07C.svg" style="width:150px; height:90px;"  
+                                             src="assets/images/Logo_UP_KZ00A_R07C.svg" style="width:150px; height:90px;"
                                              alt="Sun Green Farms"
                                              title="Sun Green Farms" />
                                     </a>
@@ -150,7 +150,7 @@
                                                         <a href="arrowroot.html">Arrowroot Starch</a>
                                                     </li>
                                                     <li><a href="turmeric.html">Turmeric Powder</a></li>
-                                                     <li><a href="turmeric-wild.html">Wild Turmeric</a></li>
+                                                    <li><a href="turmeric-wild.html">Wild Turmeric</a></li>
                                                     <li><a href="ragi.html">Finger Millet</a></li>
                                                 </ul>
                                                 <div class="dropdown-btn">
@@ -200,31 +200,39 @@
             </div>
             <!-- End Mobile Menu -->
         </header>
-
+        <!-- End Main Header -->
         <main>
-            <!-- End Main Header -->
+            <!-- HERO SLIDER START -->
+            <div class="auto-container">
+                <section class="hero-slider">
 
-            <div class="container-fluid bannerbg py-5">
-                <!-- This is for the banner row-->
-            </div>
-            <div class="col-12 article-home"> 
-                <h1 class="text-center">Sun Green Farms</h1>
-                <div class="slider-two_text">
-                    At Sun Green Farms, we believe that true nourishment comes from
-                    working with nature. <br />
-                    Nestled in the heart of Kerala, our farm follows sustainable and
-                    eco-friendly practices to grow a variety of natural products—free
-                    from harmful chemicals and rich in purity.
-                    <br />
-                    We are committed to restoring balance between agriculture and
-                    ecology by respecting the soil, conserving water, and encouraging
-                    biodiversity.
-                </div>
-                <div class="d-flex justify-content-center mt-3">
-                    <a href="about.html" class="discover-btn"> Discover More </a>
-                </div>
-            </div>
+                    <div class="hero-slide" style="background-image: url('assets/images/slideshow/sgf_slideshow_turmeric.webp');"></div>
+                    <div class="hero-slide" style="background-image: url('assets/images/slideshow/sgf_slideshow_arrowroot.webp');"></div>
+                    <div class="hero-slide" style="background-image: url('assets/images/slideshow/sgf_slideshow_jackfruit.webp');"></div>
+                    <div class="hero-slide" style="background-image: url('assets/images/slideshow/sgf_slideshow_farm.webp');"></div>
 
+                    <!-- Overlay Content -->
+                    <div class="hero-content">
+                        <h1>Sun Green Farms</h1>
+                        <p>
+                            <br />
+                            Nestled in the heart of Kerala, our farm follows sustainable and
+                            eco-friendly practices to grow a variety of natural products—free
+                            from harmful chemicals and rich in purity.
+                            <br /><br />
+                            We are committed to restoring balance between agriculture and
+                            ecology by respecting the soil, conserving water, and encouraging
+                            biodiversity.
+                        </p>
+                        <a href="about.html" class="discover-btn">Discover More</a>
+                    </div>
+
+                    <!-- Navigation -->
+                    <button class="hero-prev">&#10094;</button>
+                    <button class="hero-next">&#10095;</button>
+                </section>
+            </div>
+            <!-- HERO SLIDER END -->
             <!-- Products starts -->
             <section class="market-one style-two py-5"
                      style="background-image: url(assets/images/background/market-bg.png)">
@@ -327,7 +335,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <!-- End Right Column -->
@@ -406,7 +414,7 @@
         </main>
 
         <footer class="main-footer text-center">
-          
+
             <div class="auto-container inner-container widgets-section">
                 <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 justify-content-center g-2 footer-links-row">
                     <div class="col">
@@ -458,6 +466,55 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
     </div>
+
+
+    <script>
+        (function () {
+            const slides = document.querySelectorAll(".hero-slide");
+            const prev = document.querySelector(".hero-prev");
+            const next = document.querySelector(".hero-next");
+
+            let index = 0;
+            let interval;
+
+            function showSlide(i) {
+                slides.forEach(slide => slide.classList.remove("active"));
+                slides[i].classList.add("active");
+            }
+
+            function nextSlide() {
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            }
+
+            function prevSlide() {
+                index = (index - 1 + slides.length) % slides.length;
+                showSlide(index);
+            }
+
+            function startAuto() {
+                interval = setInterval(nextSlide, 5000);
+            }
+
+            function resetAuto() {
+                clearInterval(interval);
+                startAuto();
+            }
+
+            next.addEventListener("click", () => {
+                nextSlide();
+                resetAuto();
+            });
+
+            prev.addEventListener("click", () => {
+                prevSlide();
+                resetAuto();
+            });
+
+            showSlide(index);
+            startAuto();
+        })();
+    </script>
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
