@@ -1575,11 +1575,17 @@ a.footerlinks.active {
 .market-one_info {
     position: absolute;
     left: -40px;
-    bottom: -40px;
+    bottom: -56px;
     padding: 20px 30px;
     border-radius: 25px 0px 25px 25px;
     background-color: var(--color-two);
     border: 5px solid var(--white-color);
+}
+
+@media (min-width: 992px) and (max-width: 1140px) {
+    .market-one_info {
+        bottom: -78px;
+    }
 }
 
 .market-one_info-inner {
@@ -1615,12 +1621,14 @@ a.footerlinks.active {
 .market-one_list {
     position: relative;
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
     .market-one_list li {
         position: relative;
         font-size: 16px;
-        padding-left: 50px;
+        padding-left: 42px;
         margin-bottom: 30px;
         list-style-type: none;
     }
@@ -2368,7 +2376,7 @@ a.footerlinks {
 .about-one {
     position: relative;
     overflow: hidden;
-    margin: 30px;
+    margin: 30px 0px;
 }
 
 .about-one_bg-layer {
@@ -3302,8 +3310,8 @@ a.footerlinks {
 /* Media Query */
 @media only screen and (max-width: 599px) {
     h1 {
-        line-height: 50px;
-        font-size: 40px !important;
+        line-height: 1.2;
+        font-size: 25px !important;
     }
 
     .sec-title_heading {
@@ -3350,12 +3358,17 @@ a.footerlinks {
 
 @media only screen and (max-width: 430px) {
     .article-home h1 {
-        font-size: 32px !important;
+        font-size: 25px !important;
         line-height: 1.2 !important;
     }
 }
 
 @media only screen and (max-width: 767px) {
+    h1 {
+        line-height: 1.2;
+        font-size: 25px !important;
+    }
+
     .about-two {
         padding: 31px 0px 0px;
     }
@@ -3761,6 +3774,51 @@ a.footerlinks {
     }
 }
 
+/* Keep about image badge from covering too much area on mobile */
+@media (max-width: 767px) {
+    .market-one_image-outer {
+        padding-right: 18px;
+    }
+
+    .market-one_info {
+        left: -12px;
+        bottom: -20px;
+        padding: 10px 14px;
+        border-width: 2px;
+        border-radius: 14px 0px 14px 14px;
+    }
+
+    .market-one_info-inner {
+        padding-left: 58px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .market-one_info-icon {
+        top: 3px;
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 480px) {
+    .market-one_info {
+        left: -8px;
+        bottom: -14px;
+        padding: 8px 10px;
+    }
+
+    .market-one_info-inner {
+        padding-left: 44px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .market-one_info-icon {
+        top: 2px;
+        font-size: 35px;
+    }
+}
+
 .article-home {
     width: 100%;
     padding: 20px 50px;
@@ -3919,4 +3977,12 @@ a.footerlinks {
 
 .hero-next {
     right: 15px;
+}
+
+/* Justify long-form content text across pages */
+main p,
+main li,
+main .sec-title_text,
+main .hero-content p {
+    text-align: justify;
 }
