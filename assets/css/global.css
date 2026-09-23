@@ -615,7 +615,13 @@ img{
 /*	background:url(../images/icons/sec-title.png) no-repeat;*/
 }
 
-
+.page-nav {
+	font-family: 'Outfit',sans-serif;
+	font-size: 17px;
+	line-height: 25px;
+	color: #000;
+	text-decoration: none;
+}
 /* Cursor */
 
 .cursor {
